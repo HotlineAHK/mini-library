@@ -1,0 +1,7 @@
+<h1>Добавить книгу</h1>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Сохранить</button>
+</form>
+<p><a href="{% url 'book_list' %}">К списку книг</a></p>
